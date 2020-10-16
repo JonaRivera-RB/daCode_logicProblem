@@ -18,17 +18,9 @@ while (t > 0) {
     let m = Int(readLine() ?? "0") ?? 0
     
     if n <= m {
-        if ((n % 2) != 0) {
-            print("R")
-        }else {
-            print("L")
-        }
+        ((n % 2) != 0) ? print("R") : print("L")
     }else {
-        if ((m % 2) != 0) {
-            print("D")
-        }else {
-            print("U")
-        }
+        ((m % 2) != 0) ? print("D") : print("U")
     }
     
     t -= 1
